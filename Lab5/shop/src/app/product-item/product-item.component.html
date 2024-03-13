@@ -1,6 +1,6 @@
 <div class="product-card" >
     <img [src]="product.image" alt="Product Image" class="product-image">
-    <h3 class="product-title"><a [routerLink]="['/products/detail', product.id]">{{product.name}}</a></h3>
+    <h3 class="product-title"><a href="{{product.sourceLink}}">{{product.name}}</a></h3>
     <p class="product-description">{{product.description}}</p>
     <div class="product-info">
         <span class="product-rating">Rating: {{ getStars(product.rating) }}</span>

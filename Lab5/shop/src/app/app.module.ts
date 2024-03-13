@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 
@@ -18,7 +17,6 @@ import { ProductItemComponent } from './product-item/product-item.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: CategoriesComponent },
-      { path: 'products/detail/:productId', component: ProductDetailsComponent },
       { path: 'products/:categoryId', component: ProductListComponent}
     ])
   ],
@@ -27,7 +25,6 @@ import { ProductItemComponent } from './product-item/product-item.component';
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent,
     ProductItemComponent,
     CategoriesComponent
   ],
